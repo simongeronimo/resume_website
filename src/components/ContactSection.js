@@ -1,5 +1,35 @@
 import { Fragment } from "react";
+import { useState } from 'react';
+import { send } from 'emailjs-com';
+
 const ContactSection = () => {
+
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    message: '',
+    reply_to: '',
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send(
+      'service_r076udj',
+      'template_m0gbq3i',
+      toSend,
+      'spgCywRGDVSjAJbpK'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
   return (
     <Fragment>
       {/* Section Contacts Info */}
@@ -48,16 +78,18 @@ const ContactSection = () => {
           <div className="contact_form content-box">
             <form id="cform" method="post">
               <div className="group-val">
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="from_name" placeholder="Name" value={toSend.from_name} onChange={handleChange}/>
               </div>
               <div className="group-val">
-                <input type="email" name="email" placeholder="Email" />
+                <input type="email" name="reply_to" placeholder="Email" value={toSend.reply_to} onChange={handleChange}/>
               </div>
               <div className="group-val ct-gr">
                 <textarea
                   name="message"
                   placeholder="Message"
                   defaultValue={""}
+                  value={toSend.message}
+                  onChange={handleChange}
                 />
               </div>
               <div className="group-bts">

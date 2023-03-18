@@ -393,7 +393,7 @@ const Footer = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "copy",
                 children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                    children: "E: simongmesber@gmail.com"
+                    children: "simongmesber@gmail.com"
                 })
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -519,24 +519,6 @@ const Menu = ()=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
                                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                                     className: "mask-lnk mask-lnk-hover",
                                                     children: "Resume"
-                                                })
-                                            ]
-                                        })
-                                    })
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    className: "menu-item",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                        href: "/works",
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: "mask-lnk",
-                                                    children: "Works"
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: "mask-lnk mask-lnk-hover",
-                                                    children: "Works"
                                                 })
                                             ]
                                         })

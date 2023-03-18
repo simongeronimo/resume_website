@@ -36,14 +36,6 @@ const Menu = () => (
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="/works">
-                <a>
-                  <span className="mask-lnk">Works</span>
-                  <span className="mask-lnk mask-lnk-hover">Works</span>
-                </a>
-              </Link>
-            </li>
-            <li className="menu-item">
               <Link href="/blog">
                 <a>
                   <span className="mask-lnk">Blog</span>

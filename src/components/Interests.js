@@ -15,18 +15,17 @@ const Interests = () => {
               </div>
               <div className="name">Soccer</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </div>
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-alien-8bit" />
+                <span className="fas fa-gamepad" />
               </div>
               <div className="name">Videogames</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
               </div>
             </div>
           </div>
@@ -37,18 +36,18 @@ const Interests = () => {
               </div>
               <div className="name">Technology</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
               </div>
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
               <div className="icon">
-                <span className="fas fa-tv-retro" />
+                <span className="fas fa-tv" />
               </div>
               <div className="name">Series</div>
               <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
               </div>
             </div>
           </div>
