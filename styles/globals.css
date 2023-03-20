@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hide{
+  display: none;
+}
+
 .mobileHeader {
   display: none;
 }
@@ -75,6 +79,8 @@ img.mfp-img {
   bottom: 14px;
   right: 0;
 }
+
+.grecaptcha-badge { opacity:0;}
 
 .mfp-wrap {
   position: unset;
